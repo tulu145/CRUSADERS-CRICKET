@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+
+:root {
+  --navy: #0a1628;
+  --navy-mid: #112240;
+  --navy-light: #f0f4f8;
+  --gold: #c9a84c;
+  --gold-dark: #a8893a;
+  --white: #ffffff;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  color: #333;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+  color: var(--navy);
+  letter-spacing: 0.5px;
+}
+
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; padding: 0; margin: 0; }
+img { max-width: 100%; display: block; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--navy); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+
+/* Swiper overrides */
+.swiper-pagination-bullet-active { background: var(--gold) !important; }
+.swiper-button-next, .swiper-button-prev { color: var(--gold) !important; }
+
+/* ── Global mobile safety ── */
+section, footer, header, nav {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Ensure sections don't have excessive padding on mobile */
+@media (max-width: 768px) {
+  section { padding-left: 0 !important; padding-right: 0 !important; }
+}
