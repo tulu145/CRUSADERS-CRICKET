@@ -22,7 +22,7 @@ export default function CTA() {
         }}
       >
         <source
-          src="/images/4K Stadium video background for Cricket [msabbirt.pro].mp4"
+          src="/images/stadium-bg.mp4"
           type="video/mp4"
         />
       </video>
